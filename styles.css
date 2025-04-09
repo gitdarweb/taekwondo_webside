@@ -1,0 +1,71 @@
+/* ---------------------------
+   Estilos Globales
+--------------------------- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ---------------------------
+   Estilo para el encabezado (Ejercicio 1)
+--------------------------- */
+header {
+    background-color: #3498db;
+    /* Azul claro */
+    color: white;
+    /* Texto blanco */
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* ---------------------------
+   Estilo para el pie de página (Ejercicio 1)
+--------------------------- */
+footer {
+    background-color: #2c3e50;
+    /* Azul oscuro */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Courier New', monospace;
+}
+
+/* Estilo para los enlaces dentro del footer */
+footer a {
+    color: #f1c40f;
+    /* Amarillo */
+    text-decoration: none;
+}
+
+/* ---------------------------
+   Estilo para la navegación (Ejercicio 2)
+--------------------------- */
+.nav-list {
+    list-style: none;
+    /* Quita las viñetas */
+    padding: 0;
+    display: flex;
+    /* Ítems en fila */
+    gap: 20px;
+    /* Espacio entre ítems */
+    justify-content: center;
+    background-color: #ecf0f1;
+    /* Color de fondo para destacar */
+    margin: 0;
+    padding: 10px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    /* Quita subrayado */
+    color: #333;
+    /* Color del texto */
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+/* Efecto hover */
+.nav-list li a:hover {
+    color: #3498db;
+}

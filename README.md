@@ -36,3 +36,6 @@ Este proyecto utiliza las siguientes tecnologías:
 
 ¡Gracias por visitar nuestro proyecto! 🥋🔥
 
+**Extenciones a utilizar**
+
+
