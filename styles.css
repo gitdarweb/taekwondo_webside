@@ -1,9 +1,11 @@
-/* ---------------------------
+/* --------------------------- 
    Estilos Globales
 --------------------------- */
 body {
     margin: 0;
+    /* Elimina el margen por defecto del navegador para que el contenido comience desde el borde */
     font-family: Arial, sans-serif;
+    /* Usa Arial como fuente principal, o una similar si no está disponible */
 }
 
 /* ---------------------------
@@ -11,12 +13,15 @@ body {
 --------------------------- */
 header {
     background-color: #3498db;
-    /* Azul claro */
+    /* Color de fondo azul claro */
     color: white;
-    /* Texto blanco */
+    /* Color del texto en blanco para que contraste bien */
     text-align: center;
+    /* Centra horizontalmente el contenido del encabezado */
     padding: 20px;
+    /* Agrega espacio interno para que el contenido respire */
     font-family: Arial, sans-serif;
+    /* Reafirma el uso de la fuente principal */
 }
 
 /* ---------------------------
@@ -24,18 +29,23 @@ header {
 --------------------------- */
 footer {
     background-color: #2c3e50;
-    /* Azul oscuro */
+    /* Fondo azul oscuro para diferenciarlo del encabezado */
     color: white;
+    /* Texto blanco */
     text-align: center;
+    /* Centra horizontalmente el contenido del pie */
     padding: 15px;
+    /* Espaciado interno */
     font-family: 'Courier New', monospace;
+    /* Fuente tipo máquina de escribir, diferente al resto */
 }
 
 /* Estilo para los enlaces dentro del footer */
 footer a {
     color: #f1c40f;
-    /* Amarillo */
+    /* Color amarillo para resaltar los enlaces */
     text-decoration: none;
+    /* Quita el subrayado de los enlaces */
 }
 
 /* ---------------------------
@@ -43,29 +53,81 @@ footer a {
 --------------------------- */
 .nav-list {
     list-style: none;
-    /* Quita las viñetas */
+    /* Quita los puntos o viñetas de la lista */
     padding: 0;
+    /* Elimina espacio interno innecesario */
     display: flex;
-    /* Ítems en fila */
+    /* Organiza los ítems en una fila horizontal */
     gap: 20px;
-    /* Espacio entre ítems */
+    /* Espacio entre cada ítem de la lista */
     justify-content: center;
+    /* Centra horizontalmente la lista dentro de su contenedor */
     background-color: #ecf0f1;
-    /* Color de fondo para destacar */
+    /* Fondo gris claro para distinguir la barra de navegación */
     margin: 0;
+    /* Elimina márgenes por defecto */
+    padding: 10px;
+    /* Agrega espacio interno para mejorar la estética */
+}
+
+/* Estilo de los enlaces dentro de los ítems de navegación */
+.nav-list li a {
+    text-decoration: none;
+    /* Quita el subrayado de los enlaces */
+    color: #333;
+    /* Color gris oscuro, buena legibilidad */
+    font-weight: bold;
+    /* Negrita para destacar los enlaces */
+    font-family: Arial, sans-serif;
+    /* Fuente coherente con el resto del sitio */
+}
+
+/* Efecto al pasar el mouse por encima del enlace */
+.nav-list li a:hover {
+    color: #3498db;
+    /* Cambia a azul claro al pasar el mouse para dar feedback visual */
+}
+
+/* ---------------------------
+   Estilos para la galería
+--------------------------- */
+
+.galeria {
+    padding: 40px;
+    text-align: center;
+    background-color: #f0f8ff;
+    /* Azul claro suave para destacar la sección */
+}
+
+.galeria h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.contenedor-imagenes {
+    display: grid;
+    /* Usa un sistema de grilla */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    /* Espacio entre imágenes */
     padding: 10px;
 }
 
-.nav-list li a {
-    text-decoration: none;
-    /* Quita subrayado */
-    color: #333;
-    /* Color del texto */
-    font-weight: bold;
-    font-family: Arial, sans-serif;
+.contenedor-imagenes img {
+    width: 100%;
+    /* Que ocupe todo el ancho disponible */
+    height: auto;
+    /* Mantiene la proporción original */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+    transition: transform 0.3s ease;
+    /* Animación al pasar el mouse */
 }
 
-/* Efecto hover */
-.nav-list li a:hover {
-    color: #3498db;
+.contenedor-imagenes img:hover {
+    transform: scale(1.05);
+    /* Efecto de agrandar ligeramente */
 }
