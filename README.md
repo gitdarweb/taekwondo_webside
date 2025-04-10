@@ -14,28 +14,36 @@ Bienvenido al repositorio del sitio web de **Duarte Team - Taekwondo**, una escu
 
 Este proyecto utiliza las siguientes tecnologías:
 - **HTML5** para la estructura del sitio.
-- **CSS3** (en el futuro) para los estilos.
+- **CSS3** para los estilos.
 - **JavaScript** (en desarrollo) para agregar interactividad.
 
 ## 📂 Estructura del proyecto
 
-```
-/
-├── index.html    # Página principal
-├── styles.css    # Archivo de estilos (en desarrollo)
-├── script.js     # Archivo de scripts (en desarrollo)
-├── images/       # Carpeta de imágenes
-└── README.md     # Documento de información del proyecto
-```
+## 🌐 URLs del Proyecto
+
+🔗 Repositorio en GitHub (código fuente):  
+[https://github.com/gitdarweb/taekwondo_webside](https://github.com/gitdarweb/taekwondo_webside)
+
+🌍 Sitio Web publicado con GitHub Pages (visualización):  
+[https://gitdarweb.github.io/taekwondo_webside/](https://gitdarweb.github.io/taekwondo_webside/)
+
+## 📸 Galería de imágenes
+
+Se ha incorporado una galería que muestra diferentes momentos de práctica y entrenamiento del equipo.
+
+## 📝 Formulario de contacto
+
+Ahora podés completar un formulario con tu consulta y recibir una respuesta personalizada.
 
 ## 📞 Contacto
 
 📧 Email: contacto@duarteteam.com  
-📲 WhatsApp: [Enlace aquí](https://wa.me/)  
-🌎 Visítanos en [Facebook](#) | [Instagram](#)  
+📲 WhatsApp: [Escribinos aquí](https://wa.me/)  
+🌎 Visítanos en [Facebook](#) | [Instagram](#)
 
-¡Gracias por visitar nuestro proyecto! 🥋🔥
+---
 
-**Extenciones a utilizar**
+¡Gracias por visitar nuestro proyecto!  
+**Duarte Team - Pasión, Disciplina y Espíritu Marcial.** 🥋🔥
 
 
