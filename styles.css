@@ -1,133 +1,515 @@
 /* --------------------------- 
-   Estilos Globales
+   Variables CSS: Definimos valores reutilizables para colores, espaciados y sombras
 --------------------------- */
+:root {
+    --primary-color: #007bff;
+    /* Color principal (celeste) para botones y bordes destacados */
+    --hover-color: #0056b3;
+    /* Color para efectos hover (azul oscuro) */
+    --bg-general: #f8f9fa;
+    /* Fondo claro (gris muy claro) para secciones */
+    --text-secondary: #6c757d;
+    /* Color para textos secundarios (gris medio) */
+    --accent-color: #fd7e14;
+    /* Naranja suave para detalles */
+    --shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.1);
+    /* Sombra suave para elementos */
+    --border-radius: 0.5rem;
+    /* Bordes redondeados para elementos */
+    --padding-section: 2rem;
+    /* Espacio interno para secciones grandes */
+    --gap: 1rem;
+    /* Espacio entre elementos en grillas o listas */
+}
+
+/* --------------------------- 
+   Estilos Globales: Configuración base para toda la página
+--------------------------- */
+html {
+    font-size: 16px;
+    /* Establece el tamaño base de fuente (1rem = 16px) */
+}
+
 body {
     margin: 0;
-    /* Elimina el margen por defecto del navegador para que el contenido comience desde el borde */
+    /* Elimina los márgenes por defecto del navegador */
     font-family: Arial, sans-serif;
     /* Usa Arial como fuente principal, o una similar si no está disponible */
 }
 
-/* ---------------------------
-   Estilo para el encabezado (Ejercicio 1)
+/* --------------------------- 
+   Encabezado: Estilos para el header de la página
 --------------------------- */
 header {
-    background-color: #3498db;
-    /* Color de fondo azul claro */
+    background-color: var(--primary-color);
+    /* Fondo celeste para el encabezado */
     color: white;
-    /* Color del texto en blanco para que contraste bien */
+    /* Texto blanco para buen contraste */
     text-align: center;
-    /* Centra horizontalmente el contenido del encabezado */
-    padding: 20px;
-    /* Agrega espacio interno para que el contenido respire */
-    font-family: Arial, sans-serif;
-    /* Reafirma el uso de la fuente principal */
+    /* Centra el contenido horizontalmente */
+    padding: 1.25rem;
+    /* Agrega espacio interno (20px) alrededor del contenido */
 }
 
-/* ---------------------------
-   Estilo para el pie de página (Ejercicio 1)
+/* --------------------------- 
+   Pie de página: Estilos para el footer
 --------------------------- */
 footer {
-    background-color: #2c3e50;
-    /* Fondo azul oscuro para diferenciarlo del encabezado */
+    background-color: var(--text-secondary);
+    /* Fondo gris medio para el pie de página */
     color: white;
-    /* Texto blanco */
+    /* Texto blanco para contraste */
     text-align: center;
-    /* Centra horizontalmente el contenido del pie */
-    padding: 15px;
-    /* Espaciado interno */
+    /* Centra el contenido horizontalmente */
+    padding: 1rem;
+    /* Agrega espacio interno (16px) */
     font-family: 'Courier New', monospace;
-    /* Fuente tipo máquina de escribir, diferente al resto */
+    /* Usa fuente tipo máquina de escribir */
+    margin-top: 2rem;
+    /* Espacio superior para separar del contenido */
 }
 
-/* Estilo para los enlaces dentro del footer */
+.footer-list {
+    list-style: none;
+    /* Quita los puntos de la lista */
+    padding: 0;
+    /* Elimina el espacio interno por defecto */
+    margin: 0;
+    /* Elimina márgenes por defecto */
+}
+
+.footer-list li {
+    margin: 0.5rem 0;
+    /* Agrega espacio vertical (8px) entre elementos de la lista */
+}
+
 footer a {
-    color: #f1c40f;
-    /* Color amarillo para resaltar los enlaces */
+    color: var(--accent-color);
+    /* Enlaces en naranja suave */
     text-decoration: none;
     /* Quita el subrayado de los enlaces */
+    margin: 0 0.5rem;
+    /* Espacio horizontal (8px) entre enlaces */
+    transition: color 0.3s ease;
+    /* Suaviza el cambio de color al pasar el mouse */
 }
 
-/* ---------------------------
-   Estilo para la navegación (Ejercicio 2)
+footer a:hover {
+    color: var(--hover-color);
+    /* Cambia a azul oscuro al pasar el mouse */
+}
+
+footer i {
+    font-size: 1.2rem;
+    /* Tamaño de fuente para íconos (19.2px) */
+    margin: 0 0.25rem;
+    /* Espacio horizontal (4px) entre íconos */
+}
+
+/* --------------------------- 
+   Navegación: Estilos para la barra de navegación
 --------------------------- */
 .nav-list {
     list-style: none;
-    /* Quita los puntos o viñetas de la lista */
-    padding: 0;
-    /* Elimina espacio interno innecesario */
+    /* Quita los puntos de la lista */
+    padding: 0.625rem;
+    /* Espacio interno (10px) */
     display: flex;
-    /* Organiza los ítems en una fila horizontal */
-    gap: 20px;
-    /* Espacio entre cada ítem de la lista */
+    /* Organiza los elementos en una fila horizontal */
+    gap: 1.25rem;
+    /* Espacio (20px) entre elementos de la lista */
     justify-content: center;
-    /* Centra horizontalmente la lista dentro de su contenedor */
-    background-color: #ecf0f1;
-    /* Fondo gris claro para distinguir la barra de navegación */
+    /* Centra los elementos horizontalmente */
+    background-color: var(--bg-general);
+    /* Fondo gris claro */
     margin: 0;
     /* Elimina márgenes por defecto */
-    padding: 10px;
-    /* Agrega espacio interno para mejorar la estética */
 }
 
-/* Estilo de los enlaces dentro de los ítems de navegación */
 .nav-list li a {
     text-decoration: none;
     /* Quita el subrayado de los enlaces */
-    color: #333;
-    /* Color gris oscuro, buena legibilidad */
+    color: var(--text-secondary);
+    /* Color gris medio para los enlaces */
     font-weight: bold;
-    /* Negrita para destacar los enlaces */
-    font-family: Arial, sans-serif;
-    /* Fuente coherente con el resto del sitio */
+    /* Texto en negrita para destacar */
 }
 
-/* Efecto al pasar el mouse por encima del enlace */
 .nav-list li a:hover {
-    color: #3498db;
-    /* Cambia a azul claro al pasar el mouse para dar feedback visual */
+    color: var(--hover-color);
+    /* Cambia a azul oscuro al pasar el mouse */
 }
 
-/* ---------------------------
-   Estilos para la galería
+/* --------------------------- 
+   Galería: Estilos para la sección de imágenes
 --------------------------- */
+.boton-galeria {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--hover-color));
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.boton-galeria:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, var(--hover-color), var(--primary-color));
+}
 
 .galeria {
-    padding: 40px;
+    padding: var(--padding-section);
     text-align: center;
-    background-color: #f0f8ff;
-    /* Azul claro suave para destacar la sección */
+    background-color: var(--bg-general);
+    max-width: 800px;
+    margin: auto;
 }
 
 .galeria h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #2c3e50;
+    font-size: 1.75rem;
+    /* Tamaño de fuente para el título (28px) */
+    margin-bottom: 1.25rem;
+    /* Espacio inferior (20px) */
+    color: var(--text-secondary);
+    /* Color gris medio para el título */
 }
 
 .contenedor-imagenes {
     display: grid;
-    /* Usa un sistema de grilla */
+    /* Usa un sistema de grilla para organizar imágenes */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    /* Espacio entre imágenes */
-    padding: 10px;
+    /* Columnas automáticas, mínimo 200px */
+    gap: 0.9375rem;
+    /* Espacio entre imágenes (15px) */
+    padding: 0.625rem;
+    /* Espacio interno (10px) */
 }
 
 .contenedor-imagenes img {
     width: 100%;
-    /* Que ocupe todo el ancho disponible */
+    /* Imagen ocupa todo el ancho disponible */
     height: auto;
-    /* Mantiene la proporción original */
-    border-radius: 10px;
-    /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Sombra suave */
+    /* Mantiene la proporción de la imagen */
+    border-radius: var(--border-radius);
+    /* Bordes redondeados (8px) */
+    box-shadow: var(--shadow);
+    /* Sombra suave para profundidad */
     transition: transform 0.3s ease;
-    /* Animación al pasar el mouse */
+    /* Suaviza el cambio de tamaño al pasar el mouse */
 }
 
 .contenedor-imagenes img:hover {
     transform: scale(1.05);
-    /* Efecto de agrandar ligeramente */
+    /* Agranda la imagen un 5% al pasar el mouse */
+}
+/* ---------------------------  
+   Galería Secundaria o Alternativa 
+--------------------------- */
+.galeria-seccion {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.titulo-seccion {
+    font-size: 1.75rem;
+    /* Le aumenté el tamaño para que sea igual al de galería (1.75rem ≈ 28px) */
+    color: var(--text-secondary);
+    /* Mismo color que el título de galería de fotos */
+    margin-bottom: 1.25rem;
+    /* Mismo espacio inferior que galería */
+    font-weight: 600;
+}
+
+.imagenes-grupo {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.imagenes-grupo img {
+    width: 325px;
+    /* 30% más grande que antes */
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.imagenes-grupo img:hover {
+    transform: scale(1.05);
+}
+/* --------------------------- 
+   Secciones principales: Estilos para secciones genéricas
+--------------------------- */
+.section {
+    padding: var(--padding-section);
+    /* Espacio interno (32px) */
+    max-width: 800px;
+    /* Ancho máximo para centrar contenido */
+    margin: auto;
+    /* Centra la sección horizontalmente */
+}
+
+.section h2 {
+    color: var(--text-secondary);
+    /* Color gris medio para los títulos */
+}
+
+/* --------------------------- 
+   Video: Estilos para la sección de video
+--------------------------- */
+#video-taekwondo {
+    text-align: center;
+    /* Centra el video */
+    padding: var(--padding-section);
+    /* Espacio interno (32px) */
+}
+
+#video-taekwondo iframe {
+    width: 90%;
+    /* Ancho del video (90% del contenedor) */
+    max-width: 560px;
+    /* Ancho máximo para evitar que sea demasiado grande */
+    height: 315px;
+    /* Altura fija para el video */
+    border-radius: var(--border-radius);
+    /* Bordes redondeados (8px) */
+    box-shadow: var(--shadow);
+    /* Sombra suave para profundidad */
+}
+
+/* --------------------------- 
+   Formulario de contacto: Estilos para el formulario
+--------------------------- */
+form {
+    max-width: 600px;
+    /* Ancho máximo para el formulario */
+    margin: auto;
+    /* Centra el formulario horizontalmente */
+    background-color: var(--bg-general);
+    /* Fondo gris claro */
+    padding: 1.5rem;
+    /* Espacio interno (24px) */
+    border-radius: var(--border-radius);
+    /* Bordes redondeados (8px) */
+    box-shadow: var(--shadow);
+    /* Sombra suave */
+}
+
+form label {
+    font-weight: bold;
+    /* Texto en negrita para etiquetas */
+    color: var(--text-secondary);
+    /* Color gris medio para etiquetas */
+}
+
+form input,
+form textarea {
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    padding: 0.625rem;
+    /* Espacio interno (10px) */
+    margin: 0.3125rem 0 1rem;
+    /* Espacio superior (5px) e inferior (16px) */
+    border: 1px solid #ccc;
+    /* Borde gris claro */
+    border-radius: var(--border-radius);
+    /* Bordes redondeados (8px) */
+    font-size: 1rem;
+    /* Tamaño de fuente (16px) */
+    font-family: inherit;
+    /* Usa la misma fuente que el body */
+}
+
+form button {
+    background-color: var(--primary-color);
+    /* Fondo celeste */
+    color: white;
+    /* Texto blanco */
+    border: none;
+    /* Sin borde */
+    padding: 0.625rem 1.25rem;
+    /* Espacio interno (10px x 20px) */
+    font-size: 1rem;
+    /* Tamaño de fuente (16px) */
+    border-radius: var(--border-radius);
+    /* Bordes redondeados (8px) */
+    cursor: pointer;
+    /* Cambia el cursor a una mano al pasar el mouse */
+}
+
+form button:hover {
+    background-color: var(--hover-color);
+    /* Fondo azul oscuro al pasar el mouse */
+}
+
+/* --------------------------- 
+   Clases: Estilos para la sección de clases
+--------------------------- */
+#nuestras-clases {
+    padding: var(--padding-section);
+    /* Espacio interno (32px) */
+    background-color: var(--bg-general);
+    /* Fondo gris claro */
+    border-radius: 1rem;
+    /* Bordes redondeados (16px) */
+    margin-top: 2rem;
+    /* Espacio superior (32px) */
+}
+
+#nuestras-clases h2 {
+    text-align: center;
+    /* Centra el título */
+    font-size: 2rem;
+    /* Tamaño de fuente (32px) */
+    margin-bottom: 1rem;
+    /* Espacio inferior (16px) */
+    color: var(--text-secondary);
+    /* Color gris medio */
+}
+
+.contenedor-clases {
+    display: grid;
+    /* Usa un sistema de grilla */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* Columnas automáticas, mínimo 280px */
+    gap: var(--gap);
+    /* Espacio entre elementos (16px) */
+    margin-top: 1rem;
+    /* Espacio superior (16px) */
+}
+
+.clase-item {
+    background-color: #ffffff;
+    /* Fondo blanco para cada item */
+    border-left: 6px solid var(--primary-color);
+    /* Borde izquierdo celeste */
+    padding: 1.5rem;
+    /* Espacio interno (24px) */
+    border-radius: var(--border-radius);
+    /* Bordes redondeados (8px) */
+    box-shadow: var(--shadow);
+    /* Sombra suave */
+}
+
+.clase-item h3 {
+    font-size: 1.5rem;
+    /* Tamaño de fuente (24px) */
+    color: var(--text-secondary);
+    /* Color gris medio */
+    margin: 0 0 0.5rem;
+    /* Sin margen superior, 8px inferior */
+}
+
+.clase-item p {
+    margin: 0.5rem 0;
+    /* Espacio vertical (8px) */
+    color: var(--text-secondary);
+    /* Color gris medio */
+}
+
+.clase-item ul {
+    list-style: none;
+    /* Quita los puntos de la lista */
+    padding: 0;
+    /* Sin espacio interno */
+    margin: 0.5rem 0 1rem;
+    /* Espacio vertical (8px superior, 16px inferior) */
+}
+
+.clase-item li {
+    margin-bottom: 0.5rem;
+    /* Espacio inferior (8px) */
+    padding-left: 1.2rem;
+    /* Espacio a la izquierda para el ícono */
+    position: relative;
+    /* Permite posicionar el ícono */
+}
+
+.clase-item li::before {
+    content: "🕒";
+    /* Agrega un ícono de reloj antes de cada elemento */
+    position: absolute;
+    /* Posiciona el ícono respecto al elemento */
+    left: 0;
+    /* Alinea el ícono a la izquierda */
+}
+
+#nuestras-clases p strong {
+    color: var(--accent-color);
+    /* Resalta texto en naranja suave */
+}
+
+/* --------------------------- 
+   Responsive Design: Ajustes para diferentes tamaños de pantalla
+--------------------------- */
+@media (max-width: 37.5rem) {
+
+    /* Para pantallas pequeñas (hasta 600px) */
+    header h1 {
+        font-size: 1.5rem;
+        /* Reduce el tamaño del título (24px) */
+    }
+
+    .nav-list {
+        flex-direction: column;
+        /* Organiza la navegación en columna */
+        align-items: center;
+        /* Centra los elementos */
+        gap: 0.5rem;
+        /* Reduce el espacio entre elementos (8px) */
+    }
+
+    .section,
+    form,
+    #video-taekwondo iframe {
+        padding: 1rem;
+        /* Reduce el espacio interno (16px) */
+    }
+
+    form input,
+    form textarea {
+        font-size: 0.9rem;
+        /* Reduce el tamaño de fuente (14.4px) */
+    }
+
+    .personal-photo {
+        max-width: 150px;
+        /* Limita el ancho de la foto personal (150px) */
+    }
+}
+
+@media (min-width: 37.5625rem) and (max-width: 64rem) {
+
+    /* Para tablets (601px a 1024px) */
+    .contenedor-imagenes {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        /* Columnas más grandes (mínimo 250px) */
+    }
+
+    #video-taekwondo iframe {
+        height: 360px;
+        /* Aumenta la altura del video */
+    }
+}
+
+@media (min-width: 48rem) {
+
+    /* Para pantallas medianas y grandes (768px en adelante) */
+    .contenedor-clases {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        /* Mantiene la grilla de clases */
+    }
+
+    .clase-item {
+        flex: 1 1 calc(50% - 2rem);
+        /* Cada item ocupa el 50% del ancho, menos espacio */
+    }
 }
