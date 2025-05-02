@@ -152,15 +152,18 @@ footer i {
     font-size: 0.9rem;
     font-weight: bold;
     border: none;
-    border-radius: 1.5rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
+    border-radius: var(--border-radius);
+    /* Usamos la variable ya definida */
+    box-shadow: var(--shadow);
+    /* Usamos la sombra estándar */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
     cursor: pointer;
 }
 
 .boton-galeria:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    /* Puede mantenerse personalizado si buscás más profundidad */
     background: linear-gradient(135deg, var(--hover-color), var(--primary-color));
 }
 
@@ -209,6 +212,7 @@ footer i {
     transform: scale(1.05);
     /* Agranda la imagen un 5% al pasar el mouse */
 }
+
 /* ---------------------------  
    Galería Secundaria o Alternativa 
 --------------------------- */
@@ -245,6 +249,7 @@ footer i {
 .imagenes-grupo img:hover {
     transform: scale(1.05);
 }
+
 /* --------------------------- 
    Secciones principales: Estilos para secciones genéricas
 --------------------------- */
@@ -349,7 +354,16 @@ form button:hover {
     background-color: var(--hover-color);
     /* Fondo azul oscuro al pasar el mouse */
 }
-
+/*agrego imagen punk de fondo*/
+body {
+    background-image: url('imagenes/taekwonPunk.png');
+    background-size: cover;
+    /* Ajusta la imagen para cubrir toda la pantalla */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-position: center;
+    /* Centra la imagen */
+}
 /* --------------------------- 
    Clases: Estilos para la sección de clases
 --------------------------- */
