@@ -354,15 +354,14 @@ form button:hover {
     background-color: var(--hover-color);
     /* Fondo azul oscuro al pasar el mouse */
 }
-/*agrego imagen punk de fondo*/
 body {
     background-image: url('imagenes/taekwonPunk.png');
-    background-size: cover;
-    /* Ajusta la imagen para cubrir toda la pantalla */
+    background-size: 87.5rem auto;
+    /* aumenta el ancho */
     background-repeat: no-repeat;
-    /* Evita que la imagen se repita */
-    background-position: center;
-    /* Centra la imagen */
+    background-position: center top;
+    /* alinea arriba para que no se corte */
+    background-attachment: fixed;
 }
 /* --------------------------- 
    Clases: Estilos para la sección de clases
