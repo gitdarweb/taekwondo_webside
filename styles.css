@@ -140,6 +140,20 @@ footer i {
     /* Cambia a azul oscuro al pasar el mouse */
 }
 
+/*subrayado*/
+.nav-list a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: border 0.3s;
+}
+
+.nav-list a:hover,
+.nav-list a.active {
+    border-bottom: 2px solid #fd7e14;
+}
+
 /* --------------------------- 
    Galería: Estilos para la sección de imágenes
 --------------------------- */
@@ -354,6 +368,7 @@ form button:hover {
     background-color: var(--hover-color);
     /* Fondo azul oscuro al pasar el mouse */
 }
+
 body {
     background-image: url('imagenes/taekwonPunk.png');
     background-size: 87.5rem auto;
@@ -363,6 +378,7 @@ body {
     /* alinea arriba para que no se corte */
     background-attachment: fixed;
 }
+
 /* --------------------------- 
    Clases: Estilos para la sección de clases
 --------------------------- */
