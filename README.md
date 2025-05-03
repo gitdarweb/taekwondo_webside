@@ -42,6 +42,10 @@ Ahora podés completar un formulario con tu consulta y recibir una respuesta per
 🌎 Visítanos en [Facebook](#) | [Instagram](#)
 
 ---
+git add .
+git commit -m "Descripción de los cambios"
+git push
+
 
 ¡Gracias por visitar nuestro proyecto!  
 **Duarte Team - Pasión, Disciplina y Espíritu Marcial.** 🥋🔥
