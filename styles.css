@@ -2,9 +2,9 @@
    Variables CSS: Definimos valores reutilizables para colores, espaciados y sombras
 --------------------------- */
 :root {
-    --primary-color: #007bff;
+    --primary-color: #1d67fa;
     /* Color principal (celeste) para botones y bordes destacados */
-    --hover-color: #0056b3;
+    --hover-color: #1d67fa;
     /* Color para efectos hover (azul oscuro) */
     --bg-general: #f8f9fa;
     /* Fondo claro (gris muy claro) para secciones */
@@ -50,6 +50,22 @@ header {
     padding: 1.25rem;
     /* Agrega espacio interno (20px) alrededor del contenido */
 }
+/*texto arriba de la foto va en blanco para prueba*/
+#sobre-nosotros {
+    color: white;
+}
+#dojang {
+    color: white;
+}
+#fetra-taekwondo{
+    color: white;
+}
+#contacto{
+    color: white;
+}
+/*h2 de los fondos foto*/
+
+
 
 /* --------------------------- 
    Pie de página: Estilos para el footer
@@ -370,7 +386,7 @@ form button:hover {
 }
 
 body {
-    background-image: url('imagenes/taekwonPunk.png');
+    background-image: url('imagenes/fondoAzulFant1..png');
     background-size: 87.5rem auto;
     /* aumenta el ancho */
     background-repeat: no-repeat;
