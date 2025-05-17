@@ -6,43 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería - Duarte Team</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css"> <!-- Usamos el mismo -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Usamos el mismo -->
 </head>
+
 
 <body>
 
-    <header>
+    <header id="inicio">
         <h1>Duarte Team - Galería de Fotos</h1>
         <a href="index.html">← Volver al Inicio</a>
-    </header>
-
+        </header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="index.html#dojang">Dojang</a></li>
+                <li><a href="index.html#nuestras-clases">Clases</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="galeria.html">Galería</a></li> <!-- Nuevo -->
+            </ul> 
+         </nav>
     <section class="galeria">
         <h2>Galería de Imágenes</h2>
         <div class="contenedor-imagenes">
-            <img src="imagenes/imagen3.jpg" alt="Competencia del equipo">
-            <img src="imagenes/imagen5.jpg" alt="Examen de cinturones">
-            <img src="imagenes/imagen7.jpg" alt="Foto grupal">
-            <img src="imagenes/imagen1Web.jpg" alt="Entrenamiento 1">
-            <img src="imagenes/IMG-20231210-WA0010.jpg" alt="Copa Mardel1">
-            <img src="imagenes/IMG-20231210-WA0011.jpg" alt="Copa Mardel2">
+            <a href="images/imagen3.jpg" target="_blank">
+              <img src="images/imagen3.jpg" alt="Competencia del equipo">
+            </a>
+            <a href="images/imagen5.jpg" target="_blank">
+              <img src="images/imagen5.jpg" alt="Examen de cinturones">
+            </a>
+            <a href="images/imagen6.jpg" target="_blank">
+              <img src="images/imagen6.jpg" alt="Entrenamiento en el Dojang">
+            </a>
+            <a href="images/imagen7.jpg"target="_blank">
+            <img src="images/imagen7.jpg" alt="Foto grupal">
+        </a>
+        <a href="images/imagen1Web.jpg" target="_blank">
+            <img src="images/imagen1Web.jpg" alt="Entrenamiento 1">
+        </a>
+        
+        <a href="images/IMG-20231210-WA0010.jpg" target="_blank">
+            <img src="images/IMG-20231210-WA0010.jpg" alt="Copa Mardel1">
+        </a>
+        
+        <a href="images/IMG-20231210-WA0011.jpg" target="_blank">
+            <img src="images/IMG-20231210-WA0011.jpg" alt="Copa Mardel2">
+        </a>
+          
         </div>
-        <!-- Nueva sección de Masterclass -->
-        <div class="galeria-seccion">
-            <h3 class="titulo-seccion">Masterclass 26 de abril de 2025</h3>
-            <div class="imagenes-grupo">
-                <img src="imagenes/masterClas1.jpg" alt="Masterclass - Imagen 1">
-                <img src="imagenes/masterClas2.jpg" alt="Masterclass - Imagen 2">
-            </div>
+    <!-- Nueva sección de Masterclass -->
+    <div class="galeria-seccion">
+        <h3 class="titulo-seccion">Masterclass 26 de abril de 2025</h3>
+        <div class="imagenes-grupo">
+            <a href="images/masterClas1.jpg" target="_blank">
+                <img src="images/masterClas1.jpg" alt="Masterclass - Imagen 1">
+            </a>
+            <a href="images/masterClas2.jpg" target="_blank">
+                <img src="images/masterClas2.jpg" alt="Masterclass - Imagen 2">
+            </a>
         </div>
+    </div>
+  
     </section>
-
     <footer>
         <ul class="footer-list">
-            <li>&copy; 2025 Duarte Team - Todos los derechos reservados.</li>
+            <li>© 2025 Duarte Team - Todos los derechos reservados.</li>
+            <li>
+                Síguenos en
+                <a href="https://www.facebook.com/duarteTeam/" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/darioduartetkd/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                Chatea directo con DuarteTeam Instructor.
+                <a href="https://wa.me/message/H5LF4KJLEY67E1" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </li>
             <li><a href="index.html">Volver al inicio</a></li>
         </ul>
-    </footer>
-
+        </footer>
 </body>
 
 </html>

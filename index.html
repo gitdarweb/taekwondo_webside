@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duarte Team - Taekwondo I.T.F.</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <meta name="description"
+    content="Escuela de Taekwon-Do ITF en La Plata. Clases para niños, jóvenes y adultos con el instructor Darío Duarte, 2° Dan.">
+
     <!-- Acá va Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
@@ -16,31 +20,29 @@
     <header id="inicio">
         <!-- Define el encabezado de una página o sección -->
         <h1>Duarte Team - Taekwon-do I.T.F.</h1>
-        <img src="imagenes/ITF_Logo_New.png" alt="Mi Logo" width="50" height="25">
-        <img src="imagenes/logoClase2d.png"  alt="Mi Logo" width="60" height="60">
-        <img src="imagenes/FATI.png" alt="Mi Logo" width="50" height="25">
+        <img src="images/ITF_Logo_New.png" alt="Mi Logo" width="50" height="25">
+        <img src="images/logoClase2d.png"  alt="Mi Logo" width="60" height="60">
+        <img src="images/FATI.png" alt="Mi Logo" width="50" height="25">
         
         <p>Centro Profesional de Taekwon-do, Director Master Leiva (VIII Dan)</p>
     </header>
-<nav>
-    <!-- Sección de navegación con enlaces -->
-    <ul class="nav-list">
-        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-        <li><a href="#dojang" class="active">Dojang</a></li>
-        <li><a href="#nuestras-clases">Nuestras Clases</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-    </ul>
-</nav>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Sobre Nosotros</a></li>
+            <li><a href="index.html#dojang">Dojang</a></li>
+            <li><a href="index.html#nuestras-clases">Clases</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+    
 
   <main>
-       <section id="sobre-nosotros" class="section">
-            <h2>Sobre Nosotros</h2>
-            <p>Somos parte del Centro Profesional de Taekwondo, Director Roberto Leiva (VIII Dan). Nuestro objetivo
-                es transmitir los valores del Taekwondo: cortesía, integridad, perseverancia, autocontrol y espíritu
-                indomable.</p>
-                <p>Entrená con el Duarte Team y desarrollá disciplina, confianza y fuerza.</p>
-               
-        </section>
+    <section id="sobre-nosotros" class="section">
+        <h2>Sobre Nosotros</h2>
+        <p>Conocé más sobre quiénes somos y nuestra filosofía de entrenamiento en la página <a href="about.html">Sobre Nosotros</a>.</p>
+      </section>
+      
         <!-- Contenido principal del documento, único y esencial para la página -->
         <section id="dojang" class="section">
             <h2>Nuestros Dojang</h2>
@@ -103,56 +105,34 @@
     <iframe src="https://www.youtube.com/embed/XnILLjmJfm8" frameborder="0"></iframe>
 </section>
 
-    <section id="contacto" class="section">
-        <h2>Contacto</h2>
-        <p> <strong>Club Alberti</strong>: Calle 27 entre 37 y 38</p>
-        <p> <strong>Gimnasio Energía</strong>: Calle 30 entre 48 y 49</p>
-        <p> <strong>WhatsApp</strong>: <a href="https://wa.me/message/H5LF4KJLEY67E1" target="_blank" rel="noopener noreferrer">Escribinos
-                aquí</a></p>
-    
-        <h3>Realizá tu consulta, que pronto me comunicaré contigo:</h3>
-        <form action="https://formspree.io/f/xjkypbea" method="POST">
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br><br>
-    
-            <label for="email">Correo electrónico:</label><br>
-            <input type="email" id="email" name="email" placeholder="Tu email" required><br><br>
-    
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Tu mensaje o consulta" required></textarea><br><br>
-    
-            <button type="submit" class="boton-galeria">Enviar</button>
-
-        </form>
-    </section>
+<section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <p>Podés escribirnos o dejar tu consulta desde la página <a href="contact.html">Contacto</a>.</p>
+  </section>
 
     </main>
 
-<footer>
-    <!-- Pie de página, enlaces y contactos -->
-    <ul class="footer-list">
-
-        <li>&copy; 2025 Duarte Team - Todos los derechos reservados.</li>
-        <li>
-            Síguenos en
-        <a href="https://www.facebook.com/duarteTeam/" target="_blank">
-            <i class="fab fa-facebook"></i>
-            <!-- acá puede ir un img : subir una imagen.-->
-        </a>
-
-            <a href="https://www.instagram.com/darioduartetkd/"  target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-        </li>
-        <li>
-            Chatea directo con DuarteTeam Instructor.
-            <a href="https://wa.me/message/H5LF4KJLEY67E1" target="_blank">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-        </li>
-        <li><a href="#inicio">Volver al inicio</a></li>
-    </ul>
-</footer>
+    <footer>
+        <ul class="footer-list">
+            <li>© 2025 Duarte Team - Todos los derechos reservados.</li>
+            <li>
+                Síguenos en
+                <a href="https://www.facebook.com/duarteTeam/" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/darioduartetkd/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                Chatea directo con DuarteTeam Instructor.
+                <a href="https://wa.me/message/H5LF4KJLEY67E1" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </li>
+            <li><a href="index.html">Volver al inicio</a></li>
+        </ul>
+        </footer>
   
 </body>
 

@@ -32,9 +32,16 @@ html {
 
 body {
     margin: 0;
-    /* Elimina los márgenes por defecto del navegador */
     font-family: Arial, sans-serif;
-    /* Usa Arial como fuente principal, o una similar si no está disponible */
+    background-image: url("../images/fondoAzulFant1..png");
+    background-size: cover;
+    /* 🔥 Esta línea hace que la imagen cubra todo */
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    /* Opcional: mantiene la imagen fija al hacer scroll */
+    min-height: 100vh;
+    /* Asegura que cubra al menos el 100% de la altura visible */
 }
 
 /* --------------------------- 
@@ -50,19 +57,24 @@ header {
     padding: 1.25rem;
     /* Agrega espacio interno (20px) alrededor del contenido */
 }
+
 /*texto arriba de la foto va en blanco para prueba*/
 #sobre-nosotros {
     color: white;
 }
+
 #dojang {
     color: white;
 }
-#fetra-taekwondo{
+
+#fetra-taekwondo {
     color: white;
 }
-#contacto{
+
+#contacto {
     color: white;
 }
+
 /*h2 de los fondos foto*/
 
 
@@ -385,15 +397,7 @@ form button:hover {
     /* Fondo azul oscuro al pasar el mouse */
 }
 
-body {
-    background-image: url('imagenes/fondoAzulFant1..png');
-    background-size: 87.5rem auto;
-    /* aumenta el ancho */
-    background-repeat: no-repeat;
-    background-position: center top;
-    /* alinea arriba para que no se corte */
-    background-attachment: fixed;
-}
+
 
 /* --------------------------- 
    Clases: Estilos para la sección de clases
@@ -557,4 +561,17 @@ body {
         flex: 1 1 calc(50% - 2rem);
         /* Cada item ocupa el 50% del ancho, menos espacio */
     }
+}
+
+.contenedor-imagenes a img,
+.imagenes-grupo a img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+}
+
+.contenedor-imagenes a img:hover,
+.imagenes-grupo a img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
