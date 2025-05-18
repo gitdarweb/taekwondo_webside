@@ -43,7 +43,7 @@ Ahora podés completar un formulario con tu consulta y recibir una respuesta per
 
 ---
 git add .
-git commit -m "Descripción de los cambios"
+git commit -m "Cambios antes de la pre-entrega"
 git push
 
 

@@ -405,30 +405,47 @@ footer i {
   ================================= */
 .mapa-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
     margin-top: 2rem;
 }
 
 .mapa-box {
-    background-color: #ffffffcc;
+    background-color: #ffffff;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
-    padding: 1rem;
+    padding: 1.5rem;
     text-align: center;
+    overflow: hidden;
+    /* Evita desbordes del iframe */
 }
 
 .mapa-box h3 {
     margin-bottom: 1rem;
     color: var(--text-secondary);
+    font-size: 1.5rem;
+}
+
+.mapa-box iframe {
+    width: 100%;
+    height: 250px;
+    /* Altura fija para consistencia */
+    border: none;
+    border-radius: var(--border-radius);
+    display: block;
+    /* Evita márgenes no deseados */
 }
 
 @media (max-width: 768px) {
     .mapa-grid {
         grid-template-columns: 1fr;
     }
-}
 
+    .mapa-box iframe {
+        height: 200px;
+        /* Ajusta altura en pantallas pequeñas */
+    }
+}
 /* ================================
      RESPONSIVE GENERAL
   ================================= */
