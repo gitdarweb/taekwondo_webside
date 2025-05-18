@@ -23,15 +23,19 @@
 </head>
 
 <body>
-    <header id="inicio">
-        <!-- Define el encabezado de una página o sección -->
-        <h1>DUARTE TEAM - TAEKWON-DO I.T.F.</h1>
-        <img src="images/ITF_Logo_New.png" alt="Mi Logo" width="50" height="25">
-        <img src="images/logoClase2d.png"  alt="Mi Logo" width="60" height="60">
-        <img src="images/FATI.png" alt="Mi Logo" width="50" height="25">
-        
-        <p>Centro Profesional de Taekwon-do, Director Master Leiva (VIII Dan)</p>
+    <header id="inicio" class="encabezado-principal">
+        <div class="encabezado-titulo">
+            <h1>Duarte Team</h1>
+            <p class="subtitulo">Centro Profesional de Taekwon-do</p>
+        </div>
+    
+        <div class="encabezado-logos">
+            <img src="images/ITF_Logo_New.png" alt="Logo ITF">
+            <img src="images/logoClase2d.png" alt="Logo Duarte Team">
+            <img src="images/FATI.png" alt="Logo FATI">
+        </div>
     </header>
+      
     <nav>
         <ul class="nav-list">
             <li><a href="index.html">Inicio</a></li>
@@ -44,10 +48,14 @@
     
 
   <main>
-    <section id="sobre-nosotros" class="section">
-        <h2>SOBRE NOSOTROS</h2>
-        <p>Conocé más sobre quiénes somos y nuestra filosofía de entrenamiento en la página <a href="about.html">Sobre Nosotros</a>.</p>
-      </section>
+    <section class="hero">
+        <div class="hero-contenido">
+            <h1 class="hero-titulo">TAEKWON-DO I.T.F. EN LA PLATA</h1>
+            <p class="hero-subtitulo">Disciplina, respeto y fuerza interior con el Duarte Team</p>
+            <a href="about.html" class="boton-galeria">Conocé nuestra escuela</a>
+        </div>
+    </section>
+      
       
         <!-- Contenido principal del documento, único y esencial para la página -->
         <section id="dojang" class="section">
@@ -130,15 +138,14 @@
                     <i class="fab fa-instagram"></i>
                 </a>
             </li>
-            <li>
-                Chatea directo con DuarteTeam Instructor.
-                <a href="https://wa.me/message/H5LF4KJLEY67E1" target="_blank">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-            </li>
+            
             <li><a href="index.html">Volver al inicio</a></li>
         </ul>
         </footer>
+        <a href="https://wa.me/message/H5LF4KJLEY67E1" class="whatsapp-fixed" target="_blank" title="Chatear por WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+                
   
 </body>
 

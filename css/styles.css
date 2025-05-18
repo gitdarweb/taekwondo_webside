@@ -575,3 +575,104 @@ form button:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
+
+.whatsapp-fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    font-size: 1.8rem;
+    padding: 0.7rem 1rem;
+    border-radius: 50%;
+    z-index: 100;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-fixed:hover {
+    transform: scale(1.1);
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    /* Sombra oscura */
+    z-index: -1;
+}
+/* ----------------------------------
+   Sección Hero: portada de bienvenida
+---------------------------------- */
+.hero {
+    height: 85vh;
+    background: linear-gradient(rgba(29, 103, 250, 0.6), rgba(0, 0, 0, 0.6)), url("../images/fondoAzulFant1..png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+
+.hero-contenido {
+    max-width: 800px;
+}
+
+.hero-titulo {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+}
+
+.hero-subtitulo {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Bebas Neue', sans-serif;
+}
+/* ---------------------------
+   Encabezado modernizado
+--------------------------- */
+.encabezado-principal {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.encabezado-titulo h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0;
+    color: #ffffffcc;
+}
+
+.encabezado-logos {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.encabezado-logos img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.2));
+}
