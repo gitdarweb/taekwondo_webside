@@ -32,7 +32,7 @@ html {
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family:'Bebas Neue', sans-serif;
     background-image: url("../images/fondoAzulFant1..png");
     background-size: cover;
     /* 🔥 Esta línea hace que la imagen cubra todo */
@@ -91,7 +91,7 @@ footer {
     /* Centra el contenido horizontalmente */
     padding: 1rem;
     /* Agrega espacio interno (16px) */
-    font-family: 'Courier New', monospace;
+    font-family:'Bebas Neue',sans-serif;
     /* Usa fuente tipo máquina de escribir */
     margin-top: 2rem;
     /* Espacio superior para separar del contenido */
