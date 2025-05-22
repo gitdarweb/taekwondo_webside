@@ -8,8 +8,6 @@
     <link rel="icon" href="images/favicon.png" type="image/png">
     <meta name="description"
     content="Escuela de Taekwon-Do ITF en La Plata. Clases para niños, jóvenes y adultos con el instructor Darío Duarte, 2° Dan.">
-
-    <!-- Acá va Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- Google Fonts: Bebas Neue -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,10 +38,9 @@
     <nav>
         <ul class="nav-list">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="about.html">Sobre Nosotros</a></li>
+            <li><a href="about.html" aria-current="page">Sobre Nosotros</a></li>
             <li><a href="index.html#nuestras-sedes">Sedes</a></li>
             <li><a href="index.html#mapa-sedes">Mapa</a></li>
-
             <li><a href="index.html#fetra-taekwondo">Federación</a></li>
             <li><a href="contact.html">Contacto</a></li>
             <li><a href="galeria.html">Galería</a></li>
@@ -57,7 +54,7 @@
         <div class="hero-contenido">
             <h2 class="hero-titulo">TAEKWON-DO I.T.F. EN LA PLATA</h2>
             <p class="hero-subtitulo">Disciplina, respeto y fuerza interior con el Duarte Team</p>
-            <a href="about.html" class="boton-galeria">Conocé nuestra escuela</a>
+            <a href="images/_JPD5718.jpg" class="boton-galeria">Conocé nuestra escuela</a>
         </div>
     </section>
       
@@ -102,14 +99,15 @@
 <section id="fetra-taekwondo" class="section">
     <h2>FEDERACIÓN DE TAEKWON-DO</h2>
     <p>Conocé más sobre la Federación a la que pertenecemos:</p>
-    <!-- Iframe // muestra la pagina entera ? con la página de Fetra Taekwondo -->
     <p>Visita la página oficial de la ITF:
         <a href="https://itftkd.sport/es/" target="_blank" rel="noopener noreferrer">https://itftkd.sport/es/</a>
     </p>
 </section>
-<section id="video-taekwondo">
+<section id="video-taekwondo" class="section">
+
     <h2>THE INTERNATIONAL TAEKWON-DO FEDERATION</h2>
-    <iframe src="https://www.youtube.com/embed/XnILLjmJfm8" frameborder="0"></iframe>
+    <iframe src="https://www.youtube.com/embed/XnILLjmJfm8" frameborder="0" title="Video sobre Taekwon-Do ITF"></iframe>
+    <p>Un video que muestra la esencia del Taekwon-Do ITF y su filosofía.</p>
 </section>
 <section id="mapa-sedes" class="section">
     <h2 class="titulo-seccion">DÓNDE ENTRENAMOS</h2>
@@ -143,13 +141,15 @@
         <ul class="footer-list">
             <li>© 2025 Duarte Team - Todos los derechos reservados.</li>
             <li>
-                Síguenos en
+                <span>Síguenos en:</span>
                 <a href="https://www.facebook.com/duarteTeam/" target="_blank">
                     <i class="fab fa-facebook"></i>
                 </a>
-                <a href="https://www.instagram.com/darioduartetkd/" target="_blank">
+                <a href="https://www.instagram.com/darioduartetkd/" target="_blank" title="Instagram de Duarte Team"
+                    aria-label="Instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
+                  
             </li>
             
             <li><a href="index.html">Volver al inicio</a></li>
