@@ -82,6 +82,9 @@ body::before {
 /* ================================
      NAVEGACIÓN
   ================================= */
+/* ================================
+     NAVEGACIÓN
+  ================================= */
 .nav-list {
     list-style: none;
     padding: 0.625rem;
@@ -92,13 +95,21 @@ body::before {
     margin: 0;
 }
 
+.nav-list li {
+    flex-grow: 1;
+    text-align: center;
+    max-width: 150px;
+    /* Opcional: limita el ancho en pantallas grandes */
+}
+
 .nav-list li a {
     text-decoration: none;
     color: var(--text-secondary);
     font-weight: bold;
     padding-bottom: 4px;
     border-bottom: 2px solid transparent;
-    transition: border 0.3s;
+    transition: border 0.3s, color 0.3s;
+    /* Añadido color para transición más suave */
 }
 
 .nav-list li a:hover,
