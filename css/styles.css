@@ -517,31 +517,29 @@ a:hover {
 .formulario-titulo {
     color: white;
 }
-.perfil-instructor {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-top: 40px;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
-}
-
-.foto-instructor {
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-    margin: 20px 0;
-}
 
 .perfil-instructor {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
+    background-color: #ffffffcc;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-top: 2rem;
+}
+
+.foto-instructor {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.bio-instructor {
+    color: var(--text-secondary);
     text-align: center;
-    gap: 10px;
-    padding: 20px;
 }
 
 @media (min-width: 768px) {
@@ -550,7 +548,18 @@ a:hover {
         text-align: left;
     }
 
-    .foto-instructor {
-        margin-right: 20px;
+    .bio-instructor {
+        max-width: 500px;
+        text-align: left;
+    }
+
+    .bio-instructor p {
+        color: var(--text-secondary);
+        /* o directamente color: grey; */
+    }
+
+    .bio-instructor h2 {
+        color: var(--hover-color);
+        /* o directamente color: grey; */
     }
 }
