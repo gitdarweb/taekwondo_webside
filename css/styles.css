@@ -79,6 +79,11 @@ body::before {
     filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.2));
 }
 
+a:focus {
+    outline: 2px dashed var(--accent-color);
+    outline-offset: 3px;
+}
+
 /* ================================
      NAVEGACIÓN
   ================================= */
@@ -394,20 +399,20 @@ footer i {
   ================================= */
 .whatsapp-fixed {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25d366;
-    color: white;
-    font-size: 1.8rem;
-    padding: 0.7rem 1rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 1000;
+}
+
+.whatsapp-fixed img {
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    z-index: 100;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--shadow);
     transition: transform 0.3s ease;
 }
 
-.whatsapp-fixed:hover {
+.whatsapp-fixed img:hover {
     transform: scale(1.1);
 }
 
@@ -562,4 +567,34 @@ a:hover {
         color: var(--hover-color);
         /* o directamente color: grey; */
     }
+}
+
+.galeria-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 20px;
+}
+
+.galeria-contenedor img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.section p,
+.intro-datos,
+.clase-item p,
+.dojang-card p {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    /* tamaño de fuente responsivo */
+    color: var(--text-secondary);
+    /* usa la variable para color secundario del texto */
+    margin-bottom: 1rem;
+    /* espacio inferior entre párrafos */
+}
+header h1,
+header p {
+    color: white;
 }
