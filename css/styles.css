@@ -23,7 +23,7 @@ html {
 body {
     margin: 0;
     font-family: 'Bebas Neue', sans-serif;
-    background-image: url("../images/fondoAzulFant1..png");
+    background-image: url("../images/DARIweb3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
@@ -594,7 +594,199 @@ a:hover {
     margin-bottom: 1rem;
     /* espacio inferior entre párrafos */
 }
+.clase-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clase-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 header h1,
 header p {
     color: white;
+}
+
+/* ====== NUEVO LAYOUT CON GRID Y FLEX PARA DUARTE TEAM ====== */
+
+/* Estructura general del sitio */
+body {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+    font-family: 'Sansation', sans-serif;
+    background-color: #fefefe;
+    color: #111;
+}
+
+/* Encabezado con logos distribuidos con flex */
+.encabezado-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+}
+
+.encabezado-titulo {
+    text-align: center;
+}
+
+.encabezado-logos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.encabezado-logos img {
+    height: 60px;
+}
+
+/* Navegación horizontal con Flex */
+nav .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    background-color: #222;
+    padding: 1rem;
+    margin: 0;
+}
+
+nav .nav-list a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sección HERO con Flex */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #000, #444);
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+/* Sección de clases usando Grid */
+.contenedor-clases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Mapa con Grid */
+.mapa-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Footer con Flex */
+footer .footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111;
+    color: white;
+    padding: 2rem 1rem;
+    list-style: none;
+    gap: 1rem;
+    text-align: center;
+}
+
+footer .footer-list a {
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+}
+.whatsapp-fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.whatsapp-fixed:hover {
+    background-color: #1ebe5b;
+}
+.logo-borde {
+    border: 4px solid white;
+    border-radius: 8px;
+    /* opcional para esquinas redondeadas */
+}
+#inicio {
+    background: linear-gradient(to bottom, #1d67fa, #ffffff);
+    /* de azul a blanco */
+    color: white;
+    /* para asegurar buena visibilidad del texto */
+}
+#inicio h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+.galeria-subtitulo {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.galeria-subtitulo h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.galeria-subtitulo p {
+    font-size: 1.2em;
+}
+.galeria-subtitulo {
+    text-align: center;
+    padding: 60px 20px;
+    background-image: url('images/fondo-taekwondo.jpg');
+    /* Cambiá por tu imagen real */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+    /* oscurece un poco la imagen */
+    border-bottom: 4px solid #004080;
+    /* línea decorativa */
+    animation: fadeInDown 1s ease;
+}
+
+.galeria-subtitulo h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.galeria-subtitulo p {
+    font-size: 1.3em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
